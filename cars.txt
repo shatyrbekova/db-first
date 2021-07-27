@@ -9,6 +9,7 @@ color                   VARCHAR(15)           NOT  NULL
 door                    TINYINT UNSIGNED      NOT  NULL  
 height                  TINYINT UNSIGNED      NOT  NULL
 id                      BIGINT UNSIGNED       AUTO_INCREMENT, NOT NULL        PRIMARY KEY
+img                     LONGBLOB              NOT NULL
 km_driven               MEDIUMINT UNSIGNED    NOT NULL
 length                  TINYINT UNSIGNED      NULL           
 make                    VARCHAR(30)           NOT  NULL                       INDEX
