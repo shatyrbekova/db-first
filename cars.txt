@@ -4,14 +4,15 @@ name: cars
 
 
 Column                  Type                  Attributes                      Index
-id                      BIGINT UNSIGNED       AUTO_INCREMENT, NOT NULL        PRIMARY KEY
-make                    VARCHAR(30)           NOT  NULL                       PRIMARY KEY
-model                   VARCHAR(30)           NOT  NULL                       PRIMARY KEY
 category                VARCHAR(30)           NOT  NULL                       PRIMARY KEY
-year                    YEAR                  NOT  NULL
-weight                  FLOAT(I, D)           NOT  NULL
-door                    TINYINT UNSIGNED      NOT  NULL                       PRIMARY KEY
-wheel                   TINYINT UNSIGNED      NOT  NULL                       PRIMARY KEY
-height                  TINYINT UNSIGNED      NULL              
+door                    TINYINT UNSIGNED      NOT  NULL  
+height                  TINYINT UNSIGNED      NULL
+id                      BIGINT UNSIGNED       AUTO_INCREMENT, NOT NULL        PRIMARY KEY
 length                  TINYINT UNSIGNED      NULL           
+make                    VARCHAR(30)           NOT  NULL                       PRIMARY KEY
+model                   VARCHAR(30)           NOT  NULL                       PRIMARY KEY                                 
 speed                   SMALLINT UNSIGNED     NOT NULL
+weight                  FLOAT(I, D)           NOT  NULL             
+wheel                   TINYINT UNSIGNED      NOT  NULL  
+VIN                     VARCHAR(17)           NOT  NULL, UNIQUE               INDEX
+year                    YEAR                  NOT  NULL   
